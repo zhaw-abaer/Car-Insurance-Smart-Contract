@@ -1,0 +1,13 @@
+dotenv: .env
+dependencies:
+  - OpenZeppelin/openzeppelin-contracts@3.4.0
+  - smartcontractkit/chainlink-brownie-contracts@0.2.2
+compiler:
+  solc:
+      remappings:
+        - '@openzeppelin=OpenZeppelin/openzeppelin-contracts@3.4.0'
+        - "@chainlink=smartcontractkit/chainlink-brownie-contracts@0.2.2"
+wallets:
+  from_key: ${PRIVATE_KEY}
+  NFT_owner: ${PRIVATE_KEY_OWNER}
+  No_owner: ${NO_OWNER}
